@@ -1,0 +1,164 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "properties": {
+    "status": {
+      "$id": "/properties/status",
+      "type": "integer",
+      "title": "The Status Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "data": {
+      "$id": "/properties/data",
+      "type": "object",
+      "properties": {
+        "result": {
+          "$id": "/properties/data/properties/result",
+          "type": "array",
+          "items": {
+            "$id": "/properties/data/properties/result/items",
+            "type": "object",
+            "properties": {
+              "actual": {
+                "$id": "/properties/data/properties/result/items/properties/actual",
+                "type": "string",
+                "title": "The Actual Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "close"
+                ]
+              },
+              "consistent": {
+                "$id": "/properties/data/properties/result/items/properties/consistent",
+                "type": "boolean",
+                "title": "The Consistent Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": false,
+                "examples": [
+                  false
+                ]
+              },
+              "dataType": {
+                "$id": "/properties/data/properties/result/items/properties/dataType",
+                "type": "integer",
+                "title": "The Datatype Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  4
+                ]
+              },
+              "dataTypeName": {
+                "$id": "/properties/data/properties/result/items/properties/dataTypeName",
+                "type": "string",
+                "title": "The Datatypename Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "String"
+                ]
+              },
+              "description": {
+                "$id": "/properties/data/properties/result/items/properties/description",
+                "type": "string",
+                "title": "The Description Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "open/close"
+                ]
+              },
+              "id": {
+                "$id": "/properties/data/properties/result/items/properties/id",
+                "type": "integer",
+                "title": "The Id Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  2518
+                ]
+              },
+              "nameCn": {
+                "$id": "/properties/data/properties/result/items/properties/nameCn",
+                "type": "string",
+                "title": "The Namecn Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "s"
+                ]
+              },
+              "nameEn": {
+                "$id": "/properties/data/properties/result/items/properties/nameEn",
+                "type": "string",
+                "title": "The Nameen Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "switchswww3333"
+                ]
+              },
+              "parameterId": {
+                "$id": "/properties/data/properties/result/items/properties/parameterId",
+                "type": "integer",
+                "title": "The Parameterid Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              },
+              "scope": {
+                "$id": "/properties/data/properties/result/items/properties/scope",
+                "type": "string",
+                "title": "The Scope Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "open,close"
+                ]
+              },
+              "value": {
+                "$id": "/properties/data/properties/result/items/properties/value",
+                "type": "string",
+                "title": "The Value Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "close"
+                ]
+              }
+            }
+          }
+        },
+        "downloadUri": {
+          "$id": "/properties/data/properties/downloadUri",
+          "type": "string",
+          "title": "The Downloaduri Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "/tmp/cs_3814_2017-12-2527080687.csv"
+          ]
+        },
+        "tips": {
+          "$id": "/properties/data/properties/tips",
+          "type": "string",
+          "title": "The Tips Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "输入变量:AutoApi1=1,AutoParam50=-1"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="风云决2.1">
+    <test name="ParamTest" preserve-order="true">
+    	<parameter name="baseUrl" value="http://risk.bat.tcredit.com" />
+    	<parameter name="username" value="西红柿" />
+    	<parameter name="password" value="abcd123" />
+    	<classes>
+    		<class name="com.risk.tcredit.ParamTest"/>
+    	</classes>
+    </test>
+    <test name="Login" preserve-order="true">
+    	<parameter name="baseUrl" value="http://zx.tcredit.com" />
+    	<parameter name="username" value="dongxue"/>
+    	<parameter name="password" value="tcredit"/>
+    	<classes>
+    		<class name="com.risk.tcredit.LoginTest"/>
+    	</classes>
+    </test>
+</suite>

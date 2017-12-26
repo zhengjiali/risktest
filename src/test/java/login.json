@@ -1,0 +1,44 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "properties": {
+    "message": {
+      "$id": "/properties/message",
+      "type": "string",
+      "title": "The Message Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "登录成功！"
+      ]
+    },
+    "status": {
+      "$id": "/properties/status",
+      "type": "integer",
+      "title": "The Status Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "data": {
+      "$id": "/properties/data",
+      "type": "object",
+      "properties": {
+        "url": {
+          "$id": "/properties/data/properties/url",
+          "type": "string",
+          "title": "The Url Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "http://risk.bat.tcredit.com/risk/trics/planRun/toQuery"
+          ]
+        }
+      }
+    }
+  }
+}
