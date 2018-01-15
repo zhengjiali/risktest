@@ -13,7 +13,7 @@
     	<parameter name="username" value="西红柿" />
     	<parameter name="password" value="abcd123" />
     	<classes>
-    		<class name="com.risk.tcredit.DataGroup"/>
+    		<class name="com.risk.tcredit.DoTest"/>
     	</classes>
     </test>
 </suite>

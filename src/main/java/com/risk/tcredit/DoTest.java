@@ -54,7 +54,7 @@ public class DoTest {
 					.response();
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void doTest(){
 		String str1="[{\"id\":\"7770\",\"nameEn\":\"AutoApi1\",\"dataType\":\"1\",\"value\":\"1\",\"variableType\":\"1\"},{\"id\":\"7985\",\"nameEn\":\"AutoParam50\",\"dataType\":\"1\",\"value\":\"-1\",\"variableType\":\"1\"}]";
 		String str2="[{\"id\":\"2518\",\"nameEn\":\"switchswww3333\",\"dataType\":\"4\",\"expected\":\"\"}]";
@@ -74,6 +74,18 @@ public class DoTest {
 					.body("status", equalTo(0))
 					.assertThat().body(matchesJsonSchemaInClasspath("doTest.json"));
 
+	}
+	@Test
+	public void toDataDefinePage(){
+		given()
+			.log().all()
+			.contentType("application/x-www-form-urlencoded; charset=UTF-8")
+			.cookie("_risk_user",risk_user)
+		.when()
+			.get("/risk/trics/definedVariable/toDataDefinePage")
+		.then()
+			.statusCode(200)
+			.assertThat().body(matchesJsonSchemaInClasspath("toDataDefinePage.json"));
 	}
 
 }
