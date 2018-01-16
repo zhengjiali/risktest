@@ -1,0 +1,338 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "properties": {
+    "message": {
+      "$id": "/properties/message",
+      "type": "string",
+      "title": "The Message Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "搜索方案执行列表成功"
+      ]
+    },
+    "status": {
+      "$id": "/properties/status",
+      "type": "integer",
+      "title": "The Status Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "data": {
+      "$id": "/properties/data",
+      "type": "object",
+      "properties": {
+        "count": {
+          "$id": "/properties/data/properties/count",
+          "type": "integer",
+          "title": "The Count Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            10
+          ]
+        },
+        "current": {
+          "$id": "/properties/data/properties/current",
+          "type": "integer",
+          "title": "The Current Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1
+          ]
+        },
+        "endRowNum": {
+          "$id": "/properties/data/properties/endRowNum",
+          "type": "integer",
+          "title": "The Endrownum Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            10
+          ]
+        },
+        "limit": {
+          "$id": "/properties/data/properties/limit",
+          "type": "integer",
+          "title": "The Limit Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            10
+          ]
+        },
+        "list": {
+          "$id": "/properties/data/properties/list",
+          "type": "array",
+          "items": {
+            "$id": "/properties/data/properties/list/items",
+            "type": "object",
+            "properties": {
+              "companyId": {
+                "$id": "/properties/data/properties/list/items/properties/companyId",
+                "type": "integer",
+                "title": "The Companyid Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  1
+                ]
+              },
+              "departmentId": {
+                "$id": "/properties/data/properties/list/items/properties/departmentId",
+                "type": "integer",
+                "title": "The Departmentid Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              },
+              "description": {
+                "$id": "/properties/data/properties/list/items/properties/description",
+                "type": "string",
+                "title": "The Description Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  ""
+                ]
+              },
+              "disabledTime": {
+                "$id": "/properties/data/properties/list/items/properties/disabledTime",
+                "type": "integer",
+                "title": "The Disabledtime Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  -28799000
+                ]
+              },
+              "enable": {
+                "$id": "/properties/data/properties/list/items/properties/enable",
+                "type": "integer",
+                "title": "The Enable Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  1
+                ]
+              },
+              "enabledTime": {
+                "$id": "/properties/data/properties/list/items/properties/enabledTime",
+                "type": "integer",
+                "title": "The Enabledtime Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  1516092611595
+                ]
+              },
+              "esId": {
+                "$id": "/properties/data/properties/list/items/properties/esId",
+                "type": "string",
+                "title": "The Esid Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "7203"
+                ]
+              },
+              "headModuleId": {
+                "$id": "/properties/data/properties/list/items/properties/headModuleId",
+                "type": "integer",
+                "title": "The Headmoduleid Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  7203
+                ]
+              },
+              "historyStatus": {
+                "$id": "/properties/data/properties/list/items/properties/historyStatus",
+                "type": "integer",
+                "title": "The Historystatus Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              },
+              "id": {
+                "$id": "/properties/data/properties/list/items/properties/id",
+                "type": "integer",
+                "title": "The Id Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  7203
+                ]
+              },
+              "lastUpdateTime": {
+                "$id": "/properties/data/properties/list/items/properties/lastUpdateTime",
+                "type": "integer",
+                "title": "The Lastupdatetime Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  1516094754254
+                ]
+              },
+              "moduleNo": {
+                "$id": "/properties/data/properties/list/items/properties/moduleNo",
+                "type": "string",
+                "title": "The Moduleno Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "FA1801160002"
+                ]
+              },
+              "nameCn": {
+                "$id": "/properties/data/properties/list/items/properties/nameCn",
+                "type": "string",
+                "title": "The Namecn Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "test0001"
+                ]
+              },
+              "nameEn": {
+                "$id": "/properties/data/properties/list/items/properties/nameEn",
+                "type": "string",
+                "title": "The Nameen Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  ""
+                ]
+              },
+              "nextModuleId": {
+                "$id": "/properties/data/properties/list/items/properties/nextModuleId",
+                "type": "integer",
+                "title": "The Nextmoduleid Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              },
+              "productLine": {
+                "$id": "/properties/data/properties/list/items/properties/productLine",
+                "type": "array",
+                "items": {
+                  "$id": "/properties/data/properties/list/items/properties/productLine/items",
+                  "type": "integer",
+                  "title": "The 0 Schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": 0,
+                  "examples": [
+                    3
+                  ]
+                }
+              },
+              "productLineName": {
+                "$id": "/properties/data/properties/list/items/properties/productLineName",
+                "type": "string",
+                "title": "The Productlinename Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "分期付"
+                ]
+              },
+              "runTimes": {
+                "$id": "/properties/data/properties/list/items/properties/runTimes",
+                "type": "integer",
+                "title": "The Runtimes Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              },
+              "status": {
+                "$id": "/properties/data/properties/list/items/properties/status",
+                "type": "integer",
+                "title": "The Status Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  3
+                ]
+              },
+              "statusName": {
+                "$id": "/properties/data/properties/list/items/properties/statusName",
+                "type": "string",
+                "title": "The Statusname Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "已预置"
+                ]
+              },
+              "userId": {
+                "$id": "/properties/data/properties/list/items/properties/userId",
+                "type": "integer",
+                "title": "The Userid Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  235
+                ]
+              },
+              "userName": {
+                "$id": "/properties/data/properties/list/items/properties/userName",
+                "type": "string",
+                "title": "The Username Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "haoyoudai"
+                ]
+              },
+              "version": {
+                "$id": "/properties/data/properties/list/items/properties/version",
+                "type": "string",
+                "title": "The Version Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "v1.0.1"
+                ]
+              }
+            }
+          }
+        },
+        "startRowNum": {
+          "$id": "/properties/data/properties/startRowNum",
+          "type": "integer",
+          "title": "The Startrownum Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1
+          ]
+        },
+        "totalPage": {
+          "$id": "/properties/data/properties/totalPage",
+          "type": "integer",
+          "title": "The Totalpage Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "properties": {
+    "isExist": {
+      "$id": "/properties/isExist",
+      "type": "integer",
+      "title": "The Isexist Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "ruleGroupTypeList": {
+      "$id": "/properties/ruleGroupTypeList",
+      "type": "array",
+      "items": {
+        "$id": "/properties/ruleGroupTypeList/items",
+        "type": "object",
+        "properties": {
+          "id": {
+            "$id": "/properties/ruleGroupTypeList/items/properties/id",
+            "type": "integer",
+            "title": "The Id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+              1
+            ]
+          },
+          "name": {
+            "$id": "/properties/ruleGroupTypeList/items/properties/name",
+            "type": "string",
+            "title": "The Name Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "串行规则集（规则命中后流程结束）"
+            ]
+          }
+        }
+      }
+    },
+    "dataUrl": {
+      "$id": "/properties/dataUrl",
+      "type": "string",
+      "title": "The Dataurl Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "http://risk.bat.tcredit.com/riskData/trics/param/toIncomePage"
+      ]
+    },
+    "ctxpath": {
+      "$id": "/properties/ctxpath",
+      "type": "string",
+      "title": "The Ctxpath Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "/risk"
+      ]
+    },
+    "productLineList": {
+      "$id": "/properties/productLineList",
+      "type": "array",
+      "items": {
+        "$id": "/properties/productLineList/items",
+        "type": "object",
+        "properties": {
+          "companyId": {
+            "$id": "/properties/productLineList/items/properties/companyId",
+            "type": "integer",
+            "title": "The Companyid Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+              17
+            ]
+          },
+          "createTime": {
+            "$id": "/properties/productLineList/items/properties/createTime",
+            "type": "integer",
+            "title": "The Createtime Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+              1512445148000
+            ]
+          },
+          "deleted": {
+            "$id": "/properties/productLineList/items/properties/deleted",
+            "type": "integer",
+            "title": "The Deleted Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "description": {
+            "$id": "/properties/productLineList/items/properties/description",
+            "type": "string",
+            "title": "The Description Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              ""
+            ]
+          },
+          "id": {
+            "$id": "/properties/productLineList/items/properties/id",
+            "type": "integer",
+            "title": "The Id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+              64
+            ]
+          },
+          "lastUpdateTime": {
+            "$id": "/properties/productLineList/items/properties/lastUpdateTime",
+            "type": "integer",
+            "title": "The Lastupdatetime Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+              1512445148000
+            ]
+          },
+          "name": {
+            "$id": "/properties/productLineList/items/properties/name",
+            "type": "string",
+            "title": "The Name Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "水果"
+            ]
+          },
+          "nameEn": {
+            "$id": "/properties/productLineList/items/properties/nameEn",
+            "type": "string",
+            "title": "The Nameen Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "水果"
+            ]
+          }
+        }
+      }
+    },
+    "userId": {
+      "$id": "/properties/userId",
+      "type": "integer",
+      "title": "The Userid Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        108
+      ]
+    },
+    "userName": {
+      "$id": "/properties/userName",
+      "type": "string",
+      "title": "The Username Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "tomato"
+      ]
+    },
+    "language": {
+      "$id": "/properties/language",
+      "type": "integer",
+      "title": "The Language Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "companyId": {
+      "$id": "/properties/companyId",
+      "type": "integer",
+      "title": "The Companyid Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        17
+      ]
+    }
+  }
+}
