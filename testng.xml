@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="风云决2.1">
+    <listeners>
+        <listener class-name="util.ExtentTestNGIReporterListener"/>
+    </listeners>
     <test name="Login" preserve-order="true">
     	<parameter name="baseUrl" value="http://risk.bat.tcredit.com" />
     	<parameter name="username" value="西红柿" />
