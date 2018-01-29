@@ -16,6 +16,8 @@ import io.restassured.response.Response;
 public class PlanRun {
 
 	String risk_user;
+	Integer language;
+	String preference;
 	
 	@BeforeTest
 	public void beforeTest(){
@@ -27,14 +29,25 @@ public class PlanRun {
             prop.load(in);     ///加载属性列表
             risk_user = prop.getProperty("risk_user");
             baseURI = prop.getProperty("baseURI");
+            language = Integer.valueOf(prop.getProperty("language")).intValue();
+            preference = prop.getProperty("preference");
         }
         catch(Exception e){
             System.out.println(e);
         }
     }
 	
+	
 	@Test
-	public void toInterfaceDoc(){
-		
+	public void toQuery(){
+		given()
+			.log().all()
+			.cookie("_risk_user",risk_user)
+			.cookie("_preference",preference)
+		.when()
+			.get("/risk/trics/planRun/toQuery")
+		.then()
+			.statusCode(200)
+			.body("language", equalTo(language));
 	}
 }

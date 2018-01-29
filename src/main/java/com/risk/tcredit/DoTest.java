@@ -77,15 +77,19 @@ public class DoTest {
 	}
 	@Test
 	public void toDataDefinePage(){
-		given()
+		String lan=given()
 			.log().all()
 			.contentType("application/x-www-form-urlencoded; charset=UTF-8")
 			.cookie("_risk_user",risk_user)
 		.when()
 			.get("/risk/trics/definedVariable/toDataDefinePage")
-		.then()
-			.statusCode(200)
-			.assertThat().body(matchesJsonSchemaInClasspath("toDataDefinePage.json"));
+			.andReturn()
+			.htmlPath()
+			.getString("language");
+		System.out.println(lan);
+//		.then()
+//			.statusCode(200)
+//			.assertThat().body(matchesJsonSchemaInClasspath("toDataDefinePage.json"));
 	}
 
 }

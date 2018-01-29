@@ -46,7 +46,7 @@ String name;
 			.log().all()
 			.cookie("_risk_user",risk_user)
 			.formParam("funcode", 604)
-			.formParam("productLine[]", 64)
+			.formParam("productLine[]", 64,67)
 			.formParam("dataGroupName", name)
 		.when()
 			.post("/riskData/trics/dataGroup/addNext")
@@ -135,6 +135,20 @@ String name;
 			.statusCode(200)
 			.body("status", equalTo(-1))
 			.assertThat().body(matchesJsonSchemaInClasspath("submit.json"));
+	}
+	
+	@Test(priority=6)
+	public void checkDataGroupNoSuc(){
+		given()
+			.log().all()
+			.cookie("_risk_user",risk_user)
+			.formParam("dataGroupNo", "SJZ18Ez52a64h_")
+		.when()
+			.get("/riskData/trics/dataGroup/checkDataGroupNo")
+		.then()
+			.statusCode(200)
+			.body("status", equalTo(0))
+			.assertThat().body(matchesJsonSchemaInClasspath("checkDataGroupName.json"));
 	}
 	
 }

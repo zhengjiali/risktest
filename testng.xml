@@ -11,12 +11,9 @@
     		<class name="com.risk.tcredit.LoginTest"/>
     	</classes>
     </test>
-    <test name="ParamTest" preserve-order="true">
-        <parameter name="baseUrl" value="http://risk.bat.tcredit.com" />
-    	<parameter name="username" value="西红柿" />
-    	<parameter name="password" value="abcd123" />
+    <test name="PlanRun" preserve-order="true">
     	<classes>
-    		<class name="com.risk.tcredit.DoTest"/>
+    		<class name="com.risk.api.plan.PlanRun"/>
     	</classes>
     </test>
 </suite>

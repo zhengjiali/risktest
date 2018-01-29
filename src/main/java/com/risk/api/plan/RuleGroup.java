@@ -117,7 +117,7 @@ public class RuleGroup {
 		given()
 			.log().all()
 			.cookie("_risk_user",risk_user)
-			.formParam(parameterName, parameterValues)
+//			.formParam(parameterName, parameterValues)
 		.when()
 			.get("/trics/ruleGroup/next")
 		.then()
