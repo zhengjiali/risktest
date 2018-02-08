@@ -11,9 +11,9 @@
     		<class name="com.risk.tcredit.LoginTest"/>
     	</classes>
     </test>
-    <test name="PlanRun" preserve-order="true">
+    <test name="规则集" preserve-order="true">
     	<classes>
-    		<class name="com.risk.api.plan.PlanRun"/>
+    		<class name="com.risk.api.plan.RuleGroup"/>
     	</classes>
     </test>
 </suite>
